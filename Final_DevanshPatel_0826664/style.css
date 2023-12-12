@@ -1,0 +1,79 @@
+
+
+body {
+    background-color: #80906c; 
+
+.container {
+    margin-top: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-item {
+    margin-right: 10px;
+}
+
+.alert-info {
+    margin-top: 20px;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#profileForm {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#profileForm .form-group {
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 600px) {
+    #profileForm {
+        max-width: none;
+    }
+}
+
+
+#profileForm button {
+    width: 100%;
+}
+
+label.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.close {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+
+.btn-primary {
+    margin-right: 10px;
+}
+}

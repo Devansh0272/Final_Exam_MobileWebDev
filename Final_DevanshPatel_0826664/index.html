@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.css">
+    <style>
+        /* Add your custom styles here */
+
+        body {
+            background-color: #f8f9fa; /* Set a background color */
+        }
+
+        @media (max-width: 600px) {
+            /* Add mobile-specific styles here */
+        }
+    </style>
+    <title>Devansh Patel </title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <ul class="nav nav-tabs mx-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="bi bi-house-door">Home </i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-bell">Notifications</i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-person">Profile</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <h1 class="text-primary"> Devansh Patel</h1>
+
+        <!-- Latest News/Job Posting -->
+        <div class="alert alert-info" role="alert">
+            Here you get information about the Front-end and Back-end Developer jobs
+        </div>
+
+     <!-- Add this button wherever you want to trigger Modal 1 -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+  Education
+</button>
+
+<!-- Modal 1 -->
+<div class="modal" tabindex="-1" role="dialog" id="myModal1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Education</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="https://learntocodewith.me/wp-content/uploads/2014/12/front-end-developer.png" alt="Modal 1 Image" class="img-fluid">
+        <p>I am working as front end developer and back end developer.</p>
+        <p>Timestamp: 2023-12-9 15:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+  Experience 
+</button>
+
+<!-- Modal 2 -->
+<div class="modal" tabindex="-1" role="dialog" id="myModal1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Experience</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="https://th.bing.com/th/id/OIP.XsZ4NnJEXHv-cj69DmGREAHaFL?rs=1&pid=ImgDetMain" alt="Modal 2 Image" class="img-fluid">
+        <p>I had 2 year experience of graphic designer.</p>
+        <p>Timestamp: 2023-07-03 12:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+  My Work
+</button>
+
+<!-- Modal 3 -->
+<div class="modal" tabindex="-1" role="dialog" id="myModal1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">My Work</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="https://th.bing.com/th/id/OIP.xi_VY54V535hztHz11VTyQHaFL?rs=1&pid=ImgDetMain" alt="Modal 3 Image" class="img-fluid">
+        <p>here you will some od the reflections of my work.</p>
+        <p>Timestamp: 2023-11-10 11:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Profile Information Form -->
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" pattern="\d{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" class="form-control" id="zip" name="zip" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // jQuery Validate
+        $(document).ready(function () {
+            $("#profileForm").validate({
+                rules: {
+                    name: "required",
+                    dob: "required",
+                    phone: {
+                        required: true,
+                        pattern: /^\d{10}$/
+                    },
+                    zip: {
+                        required: true,
+                        pattern: /^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$/
+                    }
+                },
+                messages: {
+                    name: "Please enter your name",
+                    dob: "Please enter your date of birth",
+                    phone: {
+                        required: "Please enter your phone number",
+                        pattern: "Please enter a valid phone number"
+                    },
+                    zip: {
+                        required: "Please enter your zip code",
+                        pattern: "Please enter a valid Canadian zip code"
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
